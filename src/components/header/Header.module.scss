@@ -1,0 +1,150 @@
+.container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .Wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end; 
+    position: relative; 
+    // border: 2px solid red;
+   
+  }
+  
+  .countryTxt {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #3D3D3D;
+  }
+  
+  .cTypeTxt {
+    width: 25%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    text-align: left;
+    color: #8B8B8B;
+    cursor: pointer;
+  }
+  
+  .activeType {
+    color: #3D3D3D;
+    border-bottom: 1px solid #3E3E3E;
+  }
+  
+  .headerTitleWrapper {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    // border: 2px solid red;
+  }
+
+  .headerMenu {
+    width: 15%;
+    // border: 2px solid red;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+  
+  
+  .innerTitleWrapper {
+    width: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcomeTxt {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 21.79px;
+    color: #3D3D3D;
+    text-align: center;
+  }
+  
+  .borderTop {
+    width: 40%;
+    border-top: 3px solid #3D3D3D;
+  }
+  
+  .borderBottom {
+    width: 40%;
+    border-bottom: 3px solid #3D3D3D;
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    .menuIcon {
+      display: block; 
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #3D3D3D; 
+    
+    }
+  
+    .menu {
+      display: none; 
+      position: absolute;
+      top: 60px; 
+      right: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      z-index: 1000;
+      width: 100%; 
+      max-height: 200px; 
+      overflow-y: auto;
+      transition: max-height 0.3s ease;
+    }
+  
+    .menuOpen {
+      display: block; 
+    }
+  
+    .menu span {
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+      color: #8B8B8B;
+      transition: background-color 0.3s;
+    }
+  
+    .menu span:hover {
+      background-color: #f0f0f0;
+    }
+  
+    .headerTitleWrapper {
+      height: 40%; 
+    }
+  
+    .borderTop, .borderBottom {
+      display: none; 
+    }
+  
+    .innerTitleWrapper {
+      width: 100%;
+      height: 100%;
+      border-top: 3px solid #3E3E3E;
+      border-bottom: 3px solid #3E3E3E;
+    }
+  }
